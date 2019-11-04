@@ -1,0 +1,104 @@
+.vp-logoarea {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.vp-bodyapp {
+    margin: 20px;
+    border: solid 1px #b5b0b0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.camera { 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+.vp-framephotoviewer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.vp-photoarea {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.vp-countdown {
+    font-size: 20px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 12px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 17.6px; 
+}
+.vp-counter {
+    h3 {
+        text-align: center;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+        font-size: 12px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 17.6px; 
+    }
+    .vp-counterdiv {
+        text-align: center;
+    }
+    .vp-photoAction {
+        padding-top: 25px;
+        text-align: center;
+       
+    }
+}
+button {
+    text-align: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 17.6px;
+    height: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    background: #00a1ff;
+    color: white;
+    border: 2px solid #00a1ff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vp-photocontainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    flex-direction: column;
+}
+.vp-snapshot {
+    text-align: center;
+    img {
+        max-width: 90%;
+        max-height: 90%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.vp-buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    justify-content: center;
+    button {
+        margin-right: 10px;
+    }
+}
+.vp-footer {
+    text-align: center;
+}
