@@ -7,6 +7,7 @@ import { Step20TakePhotoComponent } from './step20-take-photo/step20-take-photo.
 import { CountdownModule } from 'ngx-countdown';
 import { Step10HomeComponent } from './step10-home/step10-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     WebcamModule,
     CountdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Subject, Observable } from 'rxjs';
 import { WebcamImage } from 'ngx-webcam';
 import { CountdownComponent } from 'ngx-countdown';
+import { VipoImageprocessService } from '../core/vipo-imageprocess.service';
 declare const savefile: any;
 
 @Component({
@@ -25,7 +26,8 @@ export class Step20TakePhotoComponent implements OnInit {
     @ViewChild('cd', { static: false }) private countdown: CountdownComponent;
 
 
-    constructor(private router: Router) {
+    constructor(private router: Router,
+                private vipoProcessImageService: VipoImageprocessService) {
 
     }
 
@@ -75,7 +77,7 @@ export class Step20TakePhotoComponent implements OnInit {
       try {
         const path = savefile(this.webcamImage.imageAsDataUrl);
         if (path) {
-          // call service for processing image
+          this.vipoProcessImageService.processTakenPhoto(path);
         }
       } catch (exception) {
         console.log('error processing image' + exception);
